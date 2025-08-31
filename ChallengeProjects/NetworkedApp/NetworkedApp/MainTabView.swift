@@ -3,20 +3,19 @@ import SwiftUI
 struct MainTabView: View {
     var body: some View {
         TabView {
-            // コーヒーリスト画面
             CoffeeListView()
                 .tabItem {
-                    Image(systemName: "list.bullet") // タブのアイコン
-                    Text("Coffees") // タブのラベル
+                    Image(systemName: "list.bullet")
+                    Text("Coffees")
                 }
 
-            // お気に入り画面（仮置き）
-            Text("Favorites View")
+            FavoriteView()  // ← Text("Favorites View") の代わりに呼ぶ
                 .tabItem {
-                    Image(systemName: "star.fill") // タブのアイコン
-                    Text("Favorites") // タブのラベル
+                    Image(systemName: "star.fill")
+                    Text("お気に入り")
                 }
         }
+
     }
 }
 
