@@ -9,9 +9,19 @@ import SwiftUI
 
 struct eView: View {
     var body: some View {
-        Text("E. 商品アイテム")
-        // 画像だけは最初に提示しておきます
-        AsyncImage(url: URL(string: "https://picsum.photos/300/200")!)
+        VStack(alignment: .leading){
+            AsyncImage(url: URL(string: "https://picsum.photos/300/200")!)
+                .cornerRadius(10)
+            Text("商品名：おしゃれなバッグ")
+            Text("¥12,800")
+                .foregroundColor(.green)
+                
+            
+            
+        }
+        
+        
+        
     }
 }
 
